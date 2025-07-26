@@ -1,3 +1,61 @@
 *{
-    background: purple;
-}   
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ 
+.borde{
+    border: 1px solid gray;
+}
+ 
+.titulo{
+    height: 70px;
+}
+ 
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+ 
+nav{
+    height: 50px;
+}
+ 
+.logo{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+ 
+.menu{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+ 
+.ingreso{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+ 
+ header, section{
+    height: 500px;
+ }
+ 
+ .portafolio{
+    height: 100%;
+ }
+ 
+ .port-izq,
+ .port-cnt,
+ .port-der{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+ }
+  footer{
+    height: 70px;
+  }
+ 
