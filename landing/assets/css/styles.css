@@ -45,6 +45,23 @@ header, section{
     height: 100%;
     float: left;
 }
+.fila {
+  height: 33.33%;
+  width: 100%;
+}
+
+.col {
+  height: 100%;
+  float: left;
+}
+
+.izq, .der {
+  width: 41%;
+}
+
+.cnt {
+  width: 18%;
+}
 footer{
     height: 70px;
 }
