@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa</title>
-    <link rel="stylesheet" href="landing/assets/css/styles_flex.css">
+    <link rel="stylesheet" href="landing/assets/css/styles_flexboxmodel.css">
     <script src="landing/assets/js/scripts.js"></script>
-
 </head>
 <body>
     <div class="contenedor">
@@ -17,13 +16,13 @@
             </div>
         </nav>
         <header class="borde">Encabezado</header>
-        <div class="borde titulo">Portafolio</div>
+        <p><div class="borde titulo">Portafolio</div></p>
         <section class="portafolio">
             <div class="borde port-izq">col1</div>
             <div class="borde port-cnt">col2</div>
             <div class="borde port-der">col3</div>
         </section>
-        <div class="borde titulo">Quienes Somos</div>
+        <p><div class="borde titulo">Quienes Somos</div></p>
         <section class="borde nosotros">
             <div class="fila">
                 <div class="borde col_izq">izq</div>
@@ -40,12 +39,36 @@
                 <div class="borde col_cnt">cnt</div>
                 <div class="borde col_der">der</div>
             </div>
-            
         </section>
-        <div class="borde titulo">Contactenos</div>
-        <section class="borde contacto"></section>
-        <footer class="borde"></footer>
+        <section class="contacto-container borde">
+            <div class="contact-form borde">
+                <h2>Contácta con nosotros</h2>
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre" required class="border">
+                    <input type="text" placeholder="Apellido" required class="border">
+                </div>
+                <input type="email" placeholder="Correo" required>
+                <input type="text" placeholder="Asunto" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+            <div class="map-section borde">
+                <img src="landing/assets/img/mapa.png" alt="Ubicacion" class="mapa">
+                <div class="contact-info">
+                    <p><strong>Direccion:</strong> Calle xxxxxxxx</p>
+                    <p><strong>Telefonos:</strong> xxx xxxxx xxxxx / xxx xxx xx</p>
+                    <p><strong>Celular:</strong> xxxxxxxxxxxxx / xxxxxxxxxxxx</p>
+                    <p><strong>Bogota D.C</strong></p>
+                    <div class="social-icons">
+                        <span class="icon"></span>
+                        <span class="icon"></span>
+                        <span class="icon"></span>
+                        <span class="icon"></span>
+                        <span class="icon"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="assets/js/scripts.js"></script>    
 </body>
-</html>         
+</html>
