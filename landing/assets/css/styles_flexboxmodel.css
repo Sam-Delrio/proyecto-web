@@ -171,4 +171,10 @@ button {
     .contacto-container {
         flex-direction: column;
     }
+
+    .map-section img {
+    width: 400px;
+    height: 320px;
+    border-bottom: 1px solid grey;
+}
 }
