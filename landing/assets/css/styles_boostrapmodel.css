@@ -5,7 +5,12 @@
 }
 
 nav, footer, .titulo{
-    height: 100px;
+    height: 70px;
+    text-align: center;
+}
+
+.nav-bottom {
+    height: 50px;
 }
 
 header, section {
@@ -16,3 +21,54 @@ header, section {
     height: 150px;
 }
 
+/* Para el quita gutter horizontal */
+.row {
+    --bs-gutter-x: 0; 
+}
+
+/* Seccion Mapa */
+.mapa {
+    height: 380px;
+}
+
+.direccion {
+    height: 195px;
+}
+
+.maps {
+    width: 100%;
+    height: 100%;
+}
+
+/* Formulario */
+
+.contact-form {
+    margin: auto; /* Centrar */
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 6px; /* Bordes redondeados en campos */
+    border: 1px solid #ccc; 
+}
+
+.contact-form button {
+    background-color: #007bff; 
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Azul oscuro cuando se pase el mouse */
+}
+
+textarea {
+    resize: none;
+}
+
+.direct {
+    text-align: center;
+    padding-top: 10px;
+}

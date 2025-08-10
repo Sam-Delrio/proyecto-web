@@ -6,46 +6,100 @@
     <title>Empresa</title>
     <link rel="stylesheet" href="landing/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="landing/assets/css/styles_boostrapmodel.css">
-    <script src="landing/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="landing/assets/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="row">   
-            <div class="border col-sm-12 col-md-12 col-lg-2 logo">Logo</div>
-            <div class="border col-sm-12 col-md-10 col-lg-8 menu">Menú</div>
-            <div class="border col-sm-12 col-md-2 col-lg-2 ingreso">Ingreso</button>
-            </div>
+    <div class="container">
+        <!-- Navegación -->
+        <nav class="row nav">   
+            <div class="border col-md-12 col-lg-2 logo">Logo</div>
+            <div class="border col-md-10 col-lg-8 menu">Menú</div>
+            <div class="border col-md-2 col-lg-2 ingreso">Ingreso</div>
         </nav>
+        <!-- Encabezado -->
         <header class="border row">
-            <div class="col 12">Encabezado</div>
+            <div class="col-12">Encabezado</div>
         </header>
-        <div class="border titulo">
-            <div class="col 12">Portafolio</div>
+        <!-- Portafolio -->
+        <div class="border row titulo">
+            <div class="col-12">Portafolio</div>
         </div>
         <section class="row">
             <div class="border col-lg-4 col-sm-12 col-md-4">col1</div>
             <div class="border col-lg-4 col-sm-12 col-md-4">col2</div>
             <div class="border col-lg-4 col-sm-12 col-md-4">col3</div>
         </section>
-        <div class="border titulo">Quienes Somos</div>
-        <section class="border">    
-            <div class="border row fila">
+        <!-- Quiénes Somos -->
+        <div class="border row titulo">
+            <div class="col-12">Quiénes Somos</div>
+        </div>
+        <section class="row">    
+            <div class="row fila">
                 <div class="border col-4">izq</div>
                 <div class="border col-4">cnt</div>
                 <div class="border col-4">der</div>
             </div>
-            <div class="border row fila">
+            <div class="row fila">
                 <div class="border col-4">izq</div>
                 <div class="border col-4">cnt</div>
                 <div class="border col-4">der</div>
             </div>
-            <div class="border row fila">
+            <div class="row fila">
                 <div class="border col-4">izq</div>
-                <div class="border col-4">cnt</div>
                 <div class="border col-4">der</div>
-            </div>
+                <div class="border col-4">cnt</div>
             </div>
         </section>
+        <!-- Contacto -->
+         <div class="border row titulo">
+            <div class="col-12">Contactenos</div>
+         </div>
+         <section class="row col-12">
+            <!--Formulario-->
+             <div class="row border col-lg-6 col-sm-12 col-md-12">
+                <div class="container my-5">
+                    <h4 class="text-center mb-4">Contacta Con Nosotros</h4>
+                    <form class="contact-form p-4 row">
+                        <!--Campo de Nombre y apellido-->
+                        <div class="mb-3 col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu Apellido">
+                        </div>
+                        <!--Campo de Correo-->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo</label>
+                            <input type="text" class="form-control" id="email" placeholder="Ingresa tu correo">
+                        </div>
+                        <!--Asunto-->
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe Tu Mensaje"></textarea>
+                        <!--Botón de Enviar-->
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+             </div>
+             <!-- Seccion Mapa -->
+             <div class="row border col-lg-6 col-sm-12 col-md-12">
+                 <div class=" row border mapa col-12">
+                    <img src="landing/assets/img/mapa.png" alt="Mapa Google" class="maps">
+                 </div>
+                 <div class="row border direccion col-12">
+                    <p class="direct">
+                    Direccion: XXXXXXXXXXXXXXXXXXXX
+                    <br>Telefono: XXXXXXXXXX
+                    <br>Celular: XXXXXXXXXXXXXXX
+                    <br>Bogota D.C
+                    </p>
+                 </div>
+            </div>
+            <nav class="row nav-bottom">
+                <div class="border col-12">Nav abajo</div>
+            </nav>
+         </section>
     </div>
 </body>
 </html>
