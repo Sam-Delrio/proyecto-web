@@ -72,3 +72,19 @@ textarea {
     text-align: center;
     padding-top: 10px;
 }
+
+
+
+/* DashBoard */
+
+.nav_dash nav {
+    height: 45px;
+    text-align: center;
+
+}
+
+.titulo_dash {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
