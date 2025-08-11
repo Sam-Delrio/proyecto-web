@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-nav, footer, .titulo{
+nav, footer, .titulo {
     height: 70px;
     text-align: center;
 }
@@ -21,12 +21,10 @@ header, section {
     height: 150px;
 }
 
-/* Para el quita gutter horizontal */
 .row {
-    --bs-gutter-x: 0; 
+    --bs-gutter-x: 0;
 }
 
-/* Seccion Mapa */
 .mapa {
     height: 380px;
 }
@@ -40,20 +38,18 @@ header, section {
     height: 100%;
 }
 
-/* Formulario */
-
 .contact-form {
-    margin: auto; /* Centrar */
+    margin: auto;
 }
 
 .contact-form input,
 .contact-form textarea {
-    border-radius: 6px; /* Bordes redondeados en campos */
-    border: 1px solid #ccc; 
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
 
 .contact-form button {
-    background-color: #007bff; 
+    background-color: #007bff;
     border: none;
     padding: 10px;
     font-size: 16px;
@@ -61,7 +57,7 @@ header, section {
 }
 
 .contact-form button:hover {
-    background-color: #0056b3; /* Azul oscuro cuando se pase el mouse */
+    background-color: #0056b3;
 }
 
 textarea {
@@ -73,14 +69,9 @@ textarea {
     padding-top: 10px;
 }
 
-
-
-/* DashBoard */
-
 .nav_dash nav {
     height: 45px;
     text-align: center;
-
 }
 
 .titulo_dash {
@@ -88,3 +79,55 @@ textarea {
     margin-left: 10px;
 }
 
+/* Tablet */
+@media (max-width: 991px) {
+    header, section {
+        height: 450px;
+    }
+
+    .fila {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .fila > div {
+        flex: 1 1 50%;
+        padding: 10px;
+    }
+
+    .mapa {
+        height: 300px;
+    }
+}
+
+/* Celular */
+@media (max-width: 767px) {
+    nav, footer, .titulo {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    header, section {
+        height: 450px;
+    }
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .fila > div {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    .mapa {
+        height: 250px;
+    }
+
+    .direccion {
+        height: auto;
+        padding: 10px;
+    }
+}

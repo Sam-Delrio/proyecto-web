@@ -1,86 +1,38 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-nav, footer, .titulo{
-    height: 70px;
-    text-align: center;
-}
-
-.nav-bottom {
-    height: 50px;
-}
-
-header, section {
-    height: 450px;
-}
-
-.fila {
-    height: 150px;
-}
-
-/* Para el quita gutter horizontal */
-.row {
-    --bs-gutter-x: 0; 
-}
-
-/* Seccion Mapa */
-.mapa {
-    height: 380px;
-}
-
-.direccion {
-    height: 195px;
-}
-
-.maps {
-    width: 100%;
+html, body {
     height: 100%;
 }
 
-/* Formulario */
-
-.contact-form {
-    margin: auto; /* Centrar */
+.nav_dash {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
-
-.contact-form input,
-.contact-form textarea {
-    border-radius: 6px; /* Bordes redondeados en campos */
-    border: 1px solid #ccc; 
-}
-
-.contact-form button {
-    background-color: #007bff; 
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 15px;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3; /* Azul oscuro cuando se pase el mouse */
-}
-
-textarea {
-    resize: none;
-}
-
-.direct {
-    text-align: center;
-    padding-top: 10px;
-}
-
-
-
-/* DashBoard */
 
 .nav_dash nav {
-    height: 45px;
     text-align: center;
+}
 
+section {
+    flex: 1;
+}
+
+.col-12.col-md-3.border {
+    display: flex;
+    flex-direction: column;
+}
+
+.modulo {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 .titulo_dash {
@@ -88,3 +40,30 @@ textarea {
     margin-left: 10px;
 }
 
+.ingreso {
+    overflow: hidden;
+}
+
+
+/* Celular*/
+@media (max-width: 576px) {
+    .nav_dash nav {
+        height: auto;
+        padding: 8px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 992px) {
+    .nav_dash nav {
+        height: auto;
+        padding: 10px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 993px) {
+    .nav_dash nav {
+        height: 45px;
+    }
+}

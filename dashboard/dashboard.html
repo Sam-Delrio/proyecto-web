@@ -9,28 +9,32 @@
     <script src="landing/assets/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
-    <div class="nav_dash container-flow">
-        <nav class="row">
-            <div class="border col-md-12 col-lg-3 logo">Logo</div>
-            <div class="border col-md-10 col-lg-7 menu">Menú</div>
-            <div class="border col-md-2 col-lg-2 ingreso">Administrador</div>
+    <div class="nav_dash container-fluid">
+        <!-- Barra de navegacion -->
+        <nav class="row gx-0">
+            <div class="border col-12 col-lg-2 logo">Logo</div>
+            <div class="border col-12 col-lg-7 menu">Menú</div>
+            <div class="border col-12 col-lg-3 ingreso text-nowrap">Administrador</div>
         </nav>
-        <section class="row container-fluid">
-            <div class="row border col-3">
-                <div class="border">Usuario</div>
-                <div class="border">MOD 1</div>
-                <div class="border">MOD 2</div>
-                <div class="border">MOD 3</div>
+        <!-- Dashboard -->
+        <section class="row gx-0">
+            <div class="col-12 col-md-3 border">
+                <div class="border modulo text-center">Usuario</div>
+                <div class="border modulo text-center">MOD 1</div>
+                <div class="border modulo text-center">MOD 2</div>
+                <div class="border modulo text-center">MOD 3</div>
             </div>
-            <div class="border col-9 col-md-12">
-                <div class="border">Dash</div>
+            <div class="border col-12 col-md-9">
+                <div class="border p-2">Dash</div>
                 <h4 class="mb-4 titulo_dash">Principal</h4>
             </div>
         </section>
-        <nav class="row">
-            <div class="border col-md-12 col-lg-3 logo">Botones</div>
-            <div class="border col-md-10 col-lg-9 menu">Copyright</div>
+        <!-- Footer -->
+        <nav class="row gx-0">
+            <div class="border col-12 col-lg-3 logo">Botones</div>
+            <div class="border col-12 col-lg-9 menu">Copyright</div>
         </nav>
     </div>
+</body>
 </body>
 </html>
